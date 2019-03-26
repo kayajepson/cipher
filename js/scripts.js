@@ -13,12 +13,20 @@ function reverse(string) {
   return string.slice(-1) + string.charAt(0);
 };
 
-function final(sentence2) {
-  var out = capitalize(sentence2);
-  return reverse(out);
+function final(str) {
+  var out = capitalize(str);
+  return str + reverse(out);
 }
 
-console.log(final("what"));
+
+var jesus = final(sentence);
+function fourth(str){
+return str.charAt(Math.floor(str.length / 2)) + str;
+}
+
+console.log(fourth(jesus));
+
+
 
 //var two = capital2(sentence);
 //console.log(one.concat(two));
